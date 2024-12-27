@@ -212,13 +212,13 @@ main {
 .options div {
     width: 100%;
     height: 2vmax;
-    padding: 0.6vmax;
-
+    padding: 0.7vmax;
+    
     border: none;
     border-radius: 15vmax;
-   
-    transform: scale(0);
+    
     text-align: center;
+    transform: scale(0);
     transition: 0.5s ease;
 }
 
