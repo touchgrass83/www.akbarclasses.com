@@ -251,6 +251,8 @@ main {
 /* Logo Section Start */
 .logo {
   position: absolute;
+  left: 150px;
+  top: 100px;
 
   z-index: -1;
 }
@@ -340,8 +342,8 @@ main {
   }
 
   .logo {
-    left: 28%;
-    top: 6%;
+    left: 200px;
+    top: 100px;
   }
 
   #logo-box {
@@ -372,8 +374,8 @@ main {
   }
 
   .logo {
-      left: 30%;
-      top: 5%;
+      left: 120px;
+      top: 80px;
   }
 
   #logo-box {
