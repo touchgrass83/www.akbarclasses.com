@@ -285,8 +285,8 @@ main {
 }
 
 #logo-box {
-  width: 254px;
-  height: 51px;
+  width: 302px;
+    height: 60px;
   background-color: #D8AE0E;
   transform: scale(0);
   transition: 1s ease;
