@@ -44,14 +44,14 @@ function animate_3() {
 
 function animate_4() {
     if (window.innerWidth > 480) {
-        document.getElementById("box-1").style.left = "319px";
+        document.getElementById("box-1").style.left = "477px";
         document.getElementById("box-1").style.top = "-3px";
-        document.getElementById("box-2").style.left= "9px";
+        document.getElementById("box-2").style.left= "14px";
         document.getElementById("box-2").style.top= "-3px";
-        document.getElementById("box-3").style.left = "5px";
-        document.getElementById("box-3").style.top = "96px";
-        document.getElementById("box-4").style.left = "307px";
-        document.getElementById("box-4").style.top = "96px";
+        document.getElementById("box-3").style.left = "9px";
+        document.getElementById("box-3").style.top = "144px";
+        document.getElementById("box-4").style.left = "460px";
+        document.getElementById("box-4").style.top = "144px";
     }else{
         document.getElementById("box-1").style.left = "238px";
         document.getElementById("box-1").style.top = "-2px";
@@ -69,8 +69,8 @@ function animate_4() {
 
 function animate_5() {
     if (window.innerWidth > 480) {
-        document.getElementById("shadow").style.left = "42px";
-        document.getElementById("shadow").style.top = "70px";
+        document.getElementById("shadow").style.left = "34px";
+        document.getElementById("shadow").style.top = "16px";
     }else{
         document.getElementById("shadow").style.left = "22px";
         document.getElementById("shadow").style.top = "10px";
