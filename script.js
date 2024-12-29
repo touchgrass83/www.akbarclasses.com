@@ -43,21 +43,37 @@ function animate_3() {
 }
 
 function animate_4() {
-    document.getElementById("box-1").style.transform = "translateX(12.35vmax) translateY(2.35vmax)";
-    document.getElementById("box-2").style.transform = "translateX(12.8vmax) translateY(-3vmax)";
-    document.getElementById("box-3").style.transform = "translateX(-13vmax) translateY(2.75vmax)";
-    document.getElementById("box-4").style.transform = "translateX(-12.6vmax) translateY(-2.65vmax)";
+    if (window.innerWidth > 480) {
+        document.getElementById("box-1").style.left = "319px";
+        document.getElementById("box-1").style.top = "-3px";
+        document.getElementById("box-2").style.left= "9px";
+        document.getElementById("box-2").style.top= "-3px";
+        document.getElementById("box-3").style.left = "5px";
+        document.getElementById("box-3").style.top = "96px";
+        document.getElementById("box-4").style.left = "307px";
+        document.getElementById("box-4").style.top = "96px";
+    }else{
+        document.getElementById("box-1").style.left = "238px";
+        document.getElementById("box-1").style.top = "-2px";
+        document.getElementById("box-2").style.left= "9px";
+        document.getElementById("box-2").style.top= "-2px";
+        document.getElementById("box-3").style.left = "5.5px";
+        document.getElementById("box-3").style.top = "66px";
+        document.getElementById("box-4").style.left = "227px";
+        document.getElementById("box-4").style.top = "66px";
+    }
 
     document.getElementById("logo-box").style.transform = "scale(1)";
     document.getElementById("shadow").style.transform = "scaleX(1)";
 }
 
 function animate_5() {
-    document.getElementById("shadow").style.transform = "translateX(0.5vmax) translateY(0.6vmax)";
+    document.getElementById("shadow").style.left = "42px";
+    document.getElementById("shadow").style.top = "70px";
 }
 
-setTimeout(animate_1, 1000);
+/*setTimeout(animate_1, 1000);
 setTimeout(animate_2, 1750);
 setTimeout(animate_3, 2500);
 setTimeout(animate_4, 3250);
-setTimeout(animate_5, 4000);
+setTimeout(animate_5, 4000);*/
