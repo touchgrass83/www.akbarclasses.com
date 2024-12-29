@@ -72,8 +72,8 @@ function animate_5() {
     document.getElementById("shadow").style.top = "70px";
 }
 
-/*setTimeout(animate_1, 1000);
+setTimeout(animate_1, 1000);
 setTimeout(animate_2, 1750);
 setTimeout(animate_3, 2500);
 setTimeout(animate_4, 3250);
-setTimeout(animate_5, 4000);*/
+setTimeout(animate_5, 4000);
