@@ -72,8 +72,8 @@ function animate_5() {
         document.getElementById("shadow").style.left = "34px";
         document.getElementById("shadow").style.top = "16px";
     }else{
-        document.getElementById("shadow").style.left = "22px";
-        document.getElementById("shadow").style.top = "10px";
+        document.getElementById("shadow").style.left = "25px";
+        document.getElementById("shadow").style.top = "11px";
     }
 }
 
