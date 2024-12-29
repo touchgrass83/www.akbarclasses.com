@@ -418,7 +418,6 @@ main {
   background-color: #D8AE0E;
 
   border: none;
-  border-radius: 12px;
 
   z-index: -1;
 }
@@ -436,7 +435,6 @@ main {
   background-color: #000000;
 
   border: none;
-  border-radius: 12px;
 
   z-index: -2;
 }
@@ -444,11 +442,19 @@ main {
 #title {
   font-size: 52.5px;
   text-shadow: 0 0 15px rgb(0, 0, 0, 0.3);
+
+  user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
 }
 
 #sub-title {
   font-size: 18px;
   text-shadow: 0 0 15px rgb(0, 0, 0, 0.3);
+
+  user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
 }
 
 @media (max-width: 768px) {
@@ -533,7 +539,7 @@ main {
 }
 
 .page-body div {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 /* Introduction Start */
@@ -543,11 +549,20 @@ main {
   width: 100%;
   
   border: none;
+  padding: 40px;
   border-radius: 8px;
+  transition: 1s ease;
+  transform: scale(0.5);
   box-shadow: 0 0 15px rgb(0, 0, 0, 0.3);
   background-color:beige;
+
   z-index: -1;
 }
+
+#introduction p {
+  font-size: 1.55vmax;
+  text-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+} 
 
 @media (max-width: 768px) {
   
@@ -555,7 +570,15 @@ main {
 
 @media (max-width: 480px) {
   .page-body {
-    top: 150px;
+    top: 140px;
+  }
+
+  #introduction {
+    padding: 15px;
+  }
+
+  #introduction p {
+    font-size: 1.455vmax;
   }
 }
 
@@ -572,16 +595,23 @@ footer {
     color: #fff;
     padding: 30px 0;
     font-family: Arial, sans-serif;
+}
+
+@media (max-width: 480px) {
+  footer {
+    position: absolute;
+    top: 120%;
   }
+}
   
-  .footer-container {
+.footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-  }
+}
   
   .footer-container > div {
     flex: 1;
