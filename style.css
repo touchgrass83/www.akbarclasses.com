@@ -33,7 +33,7 @@ a {
 
 /* header Section */
 header {
-    padding: 8px;
+    padding: 17px;
     background-color: rgb(255, 205, 12, 1);
 
     position: sticky;
@@ -50,22 +50,22 @@ header {
 }
 
 .hamburg-menu {
-    height: 28px;
-    width: 36px;
+    height: 42px;
+    width: 54px;
 
-    top: 5px;
-    left: 5px;
+    top: 7.5px;
+    left: 7.5px;
     position: absolute;
 }
 
 .hamburg-menu span {
-    width: 36px;
-    height: 2px;
+    width: 54px;
+    height: 3px;
 
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
 
-    left: 2px;
+    left: 3px;
     position: absolute;
 
     transition: 0.5s ease;
@@ -73,11 +73,11 @@ header {
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
 }
 
-#A1 { top: 4px; }
+#A1 { top: 6px; }
 
-#A2 { top: 14px; }
+#A2 { top: 21px; }
 
-#A3 { top: 24px; }
+#A3 { top: 36px; }
 
 #menu-button:checked ~ .hamburg-menu #A1 {
     width: 42px;
@@ -102,11 +102,11 @@ header {
 
 #tag-line {
     position: absolute;
-    left: 15.5%;
-    top: 2px;
+    left: 12.5%;
+    top: 3px;
 
     margin: 0 10px;
-    font-size: 30px;
+    font-size: 45px;
     font-family: "Comic Neue", serif;
 
     user-select: none;
@@ -123,6 +123,34 @@ header {
         font-size: 30px;
         margin: 0 10px;
     }
+
+    .hamburg-menu {
+      height: 28px;
+      width: 36px;
+  
+      top: 5px;
+      left: 5px;
+      position: absolute;
+    }
+
+    .hamburg-menu span {
+      width: 36px;
+      height: 2px;
+  
+      border: none;
+      border-radius: 8px;
+  
+      left: 2px;
+      position: absolute;
+  
+      transition: 0.5s ease;
+      background-color:#f4f4f4;
+      box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+    }
+
+    #A1 { top: 4px; }
+    #A2 { top: 14px; }
+    #A3 { top: 24px; }
   }
   
 @media (max-width: 480px) {
@@ -133,17 +161,80 @@ header {
         font-size: 18px;
         margin: 0 10px;
     }
+
+    .hamburg-menu {
+      height: 28px;
+      width: 36px;
+  
+      top: 5px;
+      left: 5px;
+      position: absolute;
+    }
+
+    .hamburg-menu span {
+      width: 36px;
+      height: 2px;
+  
+      border: none;
+      border-radius: 8px;
+  
+      left: 2px;
+      position: absolute;
+  
+      transition: 0.5s ease;
+      background-color:#f4f4f4;
+      box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+    }
+
+    #A1 { top: 4px; }
+    #A2 { top: 14px; }
+    #A3 { top: 24px; }
 }
 
 .search-bar {
-    height: 28px;
+    height: 42px;
     width: 50%;
     position: absolute;
-    top: 5px;
+    top: 7.5px;
     right: 0;
 }
 
 #search-bar-input {
+    padding-left: 9px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    position: absolute;
+    left: -2%;
+    font-size: 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
+
+#serach-button {
+    height: 100%;
+    width: 42px;
+    border: none;
+    border-radius: 12px;
+    position: absolute;
+    right: 0;
+    /*display: none;
+    visibility: hidden;*/
+}
+
+.fa-search {
+    color: gray;
+    position: absolute;
+    scale: 1.5;
+    top: 12px;
+    right: 5%;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+  
+  #search-bar-input {
     padding-left: 6px;
     height: 100%;
     width: 100%;
@@ -153,9 +244,9 @@ header {
     position: absolute;
     left: -2%;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
-}
+  }
 
-#serach-button {
+  #serach-button {
     height: 100%;
     width: 28px;
     border: none;
@@ -164,14 +255,16 @@ header {
     right: 0;
     display: none;
     visibility: hidden;
-}
+  }
 
-.fa-search {
+  .fa-search {
     color: gray;
     position: absolute;
     top: 6px;
     right: 4%;
     z-index: 1;
+  }
+
 }
 
 /* Header Section End */
@@ -251,93 +344,97 @@ main {
 /* Logo Section Start */
 
 .logo {
-  width: 320px;
-  height: 90px;
+  width: 480px;
+  height: 135px;
+
+  position: absolute;
+  left: 30px;
+  top: 90px;
 
   display: flex;
   justify-content: center;
 }
 
 .logo span {
-  height: 4px;
-  width: 4px;
+  height: 6px;
+  width: 6px;
 
   position: relative;
   
   transition: 0.5s ease;
-  outline: 1px solid black;
+  outline: 1.5px solid black;
   background-color: aliceblue;
-  box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgb(0, 0, 0, 0.3);
 
   border: none;
-  border-radius: 1px;
+  border-radius: 1.5px;
 
   z-index: -1;
 }
 
 #box-1 {
-  left: 170px;
-  top: 40px;
+  left: 261px;
+  top: 58px;
 }
 
 #box-2 {
-  left: 160px;
-  top: 40px;
+  left: 245px;
+  top: 58px;
 }
 
 #box-3 {
-  left: 156px;
-  top: 46px;
+  left: 240px;
+  top: 68px;
 }
 
 #box-4 {
-  left: 158.5px;
-  top: 46px;
+  left: 244.5px;
+  top: 68px;
 }
 
 #logo-box {
-  width: 320px;
-  height: 90px;
+  width: 480px;
+  height: 135px;
 
-  margin: 4px;
+  margin: 6px;
   text-align: center;
   transform: scale(0);
   transition: 0.5s ease;
-  outline: 2px solid black;
+  outline: 3px solid black;
   background-color: #D8AE0E;
 
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
 
   z-index: -1;
 }
 
 #shadow {
-  width: 300px;
-  height: 90px;
+  width: 450px;
+  height: 135px;
   
   position: absolute;
-  left: 37px;
-  top: 65px;
+  left: 26px;
+  top: 5px;
 
   transform: scale(0);
   transition: 0.5s ease;
   background-color: #000000;
 
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
 
   z-index: -2;
 }
 
 #title {
-  font-size: 35px;
-  text-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+  font-size: 52.5px;
+  text-shadow: 0 0 15px rgb(0, 0, 0, 0.3);
 }
 
 #sub-title {
-  font-size: 12px;
-  text-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+  font-size: 18px;
+  text-shadow: 0 0 15px rgb(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
@@ -401,27 +498,37 @@ main {
 
 /* Logo Section End */
 
+/* Page-body Section Start */
+
+.page-body {
+  width: 98%;
+  
+  position: absolute;
+  left: 1%;
+  top: 290px;
+
+  z-index: -1;
+}
+
+.page-body div {
+  margin-top: 10px;
+}
+
 /* Introduction Start */
 
 #introduction {
   height: 40vmax;
-  width: 98%;
-
-  position: absolute;
-  left: 1%;
-  top: 200px;
+  width: 100%;
   
   border: none;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgb(0, 0, 0, 0.3);
   background-color:beige;
   z-index: -1;
 }
 
 @media (max-width: 768px) {
-  #introduction {
-
-  }
+  
 }
 
 @media (max-width: 480px) {
@@ -430,7 +537,9 @@ main {
   }
 }
 
-/* introduction End */
+/* Introduction End */
+
+/* Page-body Section End */
 
 /* Main Section End */
 
