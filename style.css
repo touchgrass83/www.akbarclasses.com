@@ -154,6 +154,10 @@ header {
   }
   
 @media (max-width: 480px) {
+    header {
+      padding: 8px;
+    }
+
     #tag-line {
         position: absolute;
         left: 12%;
@@ -219,8 +223,8 @@ header {
     border-radius: 12px;
     position: absolute;
     right: 0;
-    /*display: none;
-    visibility: hidden;*/
+    display: none;
+    visibility: hidden;
 }
 
 .fa-search {
@@ -232,7 +236,15 @@ header {
     z-index: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+
+  .search-bar {
+    height: 28px;
+    width: 50%;
+    position: absolute;
+    top: 5px;
+    right: 0;
+  }
   
   #search-bar-input {
     padding-left: 6px;
@@ -241,6 +253,7 @@ header {
     border: none;
     outline: none;
     border-radius: 8px;
+    font-size:medium;
     position: absolute;
     left: -2%;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
@@ -260,6 +273,7 @@ header {
   .fa-search {
     color: gray;
     position: absolute;
+    scale: 1;
     top: 6px;
     right: 4%;
     z-index: 1;
@@ -438,15 +452,7 @@ main {
 }
 
 @media (max-width: 768px) {
-  #box-3 {
-    left: 156.5px;
-    top: 46px;
-  }
 
-  #box-4 {
-    left: 159px;
-    top: 46px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -455,40 +461,56 @@ main {
     height: 70px;
     
     position: absolute;
-    left: 0;
+    left: 0px;
+    top: 60px;
   }
 
-  #box-1 { 
-    left: 130px; 
-    top: 26px;
+  .logo span {
+    height: 4px;
+    width: 4px;
+
+    outline: 1px solid black;
+  }
+
+  #box-1 {
+    left: 129.5px; 
+    top: 28px;
   }
   
   #box-2 { 
-    left: 120px;
-    top: 26px;
+    left: 121px;
+    top: 28px;
   }
   
   #box-3 {
-    left: 116px; 
-    top: 32px;
+    left: 117.25px; 
+    top: 33px;
   }
   
   #box-4 {
-    left: 118.5px; 
-    top: 32px;
+    left: 118.25px; 
+    top: 33px;
   }
 
   #logo-box {
     height: 60px;
     width: 230px;
+
+    outline: 1px solid black;
+
+    border: none;
+    border-radius: 8px;
   }
 
   #shadow {
-    width: 221px;
+    width: 215px;
     height: 60px;
 
-    left: 17px;
-    top: 5px;
+    left: 20px;
+    top: 6px;
+
+    border: none;
+    border-radius: 8px;
   }
 
   #title { font-size: 25px; }
@@ -532,8 +554,8 @@ main {
 }
 
 @media (max-width: 480px) {
-  #introduction {
-    top: 160px;
+  .page-body {
+    top: 150px;
   }
 }
 
