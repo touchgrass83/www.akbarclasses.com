@@ -249,150 +249,137 @@ main {
 /* Menu Section End */
 
 /* Logo Section Start */
+
 .logo {
-  position: absolute;
-  left: 150px;
-  top: 100px;
+  width: 320px;
+  height: 90px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.logo span {
+  height: 4px;
+  width: 4px;
+
+  position: relative;
+  
+  outline: 1px solid black;
+  background-color: aliceblue;
+  transition: 0.5s ease;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
+
+#box-1 {
+  left: 170px;
+  top: 40px;
+}
+
+#box-2 {
+  left: 160px;
+  top: 40px;
+}
+
+#box-3 {
+  left: 156px;
+  top: 46px;
+}
+
+#box-4 {
+  left: 158.5px;
+  top: 46px;
+}
+
+#logo-box {
+  width: 320px;
+  height: 90px;
+
+  margin: 4px;
+  text-align: center;
+  transform: scale(0);
+  transition: 0.5s ease;
+  outline: 2px solid black;
+  background-color: #D8AE0E;
 
   z-index: -1;
 }
 
-.logo span {
-  width: 0.2vmax;
-  height: 0.2vmax;
-  background-color: rgb(255, 255, 255);
-  outline: 1px solid rgb(0, 0, 0);
-  position: absolute;
-  box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
-  transition: 1s ease;
-}
-
-#box-1 {
-  left: 0.2vmax;
-  top: 0.2vmax;
-}
-#box-2 {
-  left: -0.2vmax;
-  top: 0.2vmax;
-}
-#box-3 {
-  left: 0.2vmax;
-  top: -0.2vmax;
-}
-#box-4 {
-  left: -0.2vmax;
-  top: -0.2vmax;
-}
-
-#logo-box {
-  width: 302px;
-    height: 60px;
-  background-color: #D8AE0E;
-  transform: scale(0);
-  transition: 1s ease;
-  outline: 1px solid rgb(0, 0, 0);
-
-  position: absolute;
-  left: -127px;
-  top: -26px;
-
-  text-align: center;
-}
-
 #shadow {
-  width: 254px;
-  height: 51px;
-  background-color: #000000;
-  transform: scale(0);
-  transition: 1s ease;
-
+  width: 300px;
+  height: 90px;
+  
   position: absolute;
-  left: -127px;
-  top: -26px;
+  left: 37px;
+  top: 65px;
+
+  transform: scale(0);
+  transition: 0.5s ease;
+  background-color: #000000;
 
   z-index: -2;
 }
 
 #title {
-  font-size: 30px;
-  
-  position: relative;
-  top: -5%;
-
+  font-size: 35px;
   text-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
 }
 
 #sub-title {
-  font-size: 10px;
-
-  position: relative;
-  top: -25%;
-
+  font-size: 12px;
   text-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
-  #title {
-      font-size: 35px;
+  #box-3 {
+    left: 156.5px;
+    top: 46px;
   }
 
-  #sub-title {
-    font-size: 10px;
-    top: -20%;
-  }
-
-  .logo {
-    left: 200px;
-    top: 100px;
-  }
-
-  #logo-box {
-    width: 302px;
-    height: 60px;
-
-    left: -151px;
-    top: -30px;
-  }
-
-  #shadow {
-    width: 302px;
-    height: 60px;
-
-    left: -150px;
-    top: -30px;
+  #box-4 {
+    left: 159px;
+    top: 46px;
   }
 }
 
 @media (max-width: 480px) {
-  #title {
-      font-size: 25px;
-  }
-
-  #sub-title {
-    font-size: 9px;
-    top: -25%;
-  }
-
   .logo {
-      left: 120px;
-      top: 80px;
+    width: 240px;
+    height: 70px;
+  }
+
+  #box-1 { 
+    left: 130px; 
+    top: 26px;
+  }
+  
+  #box-2 { 
+    left: 120px;
+    top: 26px;
+  }
+  
+  #box-3 {
+    left: 116px; 
+    top: 32px;
+  }
+  
+  #box-4 {
+    left: 118.5px; 
+    top: 32px;
   }
 
   #logo-box {
-    width: 204px;
-    height: 40px;
-
-    left: -102px;
-    top: -20px;
+    height: 60px;
+    width: 230px;
   }
 
   #shadow {
-    width: 204px;
-    height: 40px;
-
-    left: -102px;
-    top: -20px;
+    width: 221px;
+    height: 60px;
   }
+
+  #title { font-size: 25px; }
+  
+  #sub-title { font-size: 10px; }
 }
 
 /* Logo Section End */
@@ -405,7 +392,7 @@ main {
 
   position: absolute;
   left: 1%;
-  top: 16vmax;
+  top: 18vmax;
   
   border: none;
   border-radius: 8px;
