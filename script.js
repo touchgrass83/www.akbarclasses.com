@@ -68,8 +68,20 @@ function animate_4() {
 }
 
 function animate_5() {
-    document.getElementById("shadow").style.left = "42px";
-    document.getElementById("shadow").style.top = "70px";
+    if (window.innerWidth > 480) {
+        document.getElementById("shadow").style.left = "42px";
+        document.getElementById("shadow").style.top = "70px";
+    }else{
+        document.getElementById("shadow").style.left = "22px";
+        document.getElementById("shadow").style.top = "10px";
+    }
+}
+
+function animate_6() {
+    document.getElementById("box-1").style.opacity = 0;
+    document.getElementById("box-2").style.opacity = 0;
+    document.getElementById("box-3").style.opacity = 0;
+    document.getElementById("box-4").style.opacity = 0;
 }
 
 setTimeout(animate_1, 1000);
@@ -77,3 +89,4 @@ setTimeout(animate_2, 1750);
 setTimeout(animate_3, 2500);
 setTimeout(animate_4, 3250);
 setTimeout(animate_5, 4000);
+setTimeout(animate_6, 5500);
