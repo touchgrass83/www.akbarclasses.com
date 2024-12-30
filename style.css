@@ -39,7 +39,7 @@ header {
     position: sticky;
     top: 0;
     
-    z-index: 1;
+    z-index: 2;
     text-align: center;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
 }
@@ -134,8 +134,8 @@ header {
     }
 
     .hamburg-menu span {
-      width: 36px;
-      height: 2px;
+      width: 54px;
+      height: 3px;
   
       border: none;
       border-radius: 8px;
@@ -193,6 +193,11 @@ header {
     #A1 { top: 4px; }
     #A2 { top: 14px; }
     #A3 { top: 24px; }
+
+    .hamburg-menu span {
+      width: 36px;
+      height: 2px;
+    }
 }
 
 .search-bar {
@@ -308,6 +313,8 @@ main {
     transition: 0.5s ease;
     overflow-x: hidden;
     background-color: #D8AE0E;
+
+    z-index: 1;
 }
 
 .options {
@@ -545,7 +552,7 @@ main {
 /* Introduction Start */
 
 #introduction {
-  height: 40vmax;
+  padding: 16px;
   width: 100%;
   
   border: none;
