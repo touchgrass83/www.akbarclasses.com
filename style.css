@@ -51,7 +51,7 @@ header {
 
 .hamburg-menu {
     height: 42px;
-    width: 54px;
+    width: 36px;
 
     top: 7.5px;
     left: 7.5px;
@@ -59,8 +59,8 @@ header {
 }
 
 .hamburg-menu span {
-    width: 54px;
-    height: 3px;
+    width: 36px;
+    height: 2px;
 
     border: none;
     border-radius: 12px;
@@ -80,9 +80,9 @@ header {
 #A3 { top: 36px; }
 
 #menu-button:checked ~ .hamburg-menu #A1 {
-    width: 42px;
+    width: 63px;
 
-    top: 14px;
+    top: 21px;
     left: 0px;
     transform: rotate(45deg);
 }
@@ -93,9 +93,9 @@ header {
 }
 
 #menu-button:checked ~ .hamburg-menu #A3 {
-    width: 42px;
+    width: 63px;
     
-    top: 14px;
+    top: 21px;
     left: 0px;
     transform: rotate(-45deg);
 }
@@ -194,10 +194,26 @@ header {
     #A2 { top: 14px; }
     #A3 { top: 24px; }
 
-    .hamburg-menu span {
-      width: 36px;
-      height: 2px;
-    }
+    #menu-button:checked ~ .hamburg-menu #A1.  {
+    width: 42px;
+
+    top: 14px;
+    left: 0px;
+    transform: rotate(45deg);
+}
+
+#menu-button:checked ~ .hamburg-menu #A2 {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+#menu-button:checked ~ .hamburg-menu #A3 {
+    width: 42px;
+    
+    top: 14px;
+    left: 0px;
+    transform: rotate(-45deg);
+}
 }
 
 .search-bar {
