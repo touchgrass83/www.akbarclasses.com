@@ -1,10 +1,15 @@
 /* Footer Section Start */
 
 footer {
+    width: 102%;
     background-color: #222;
     color: #fff;
     padding: 30px 0;
     font-family: Arial, sans-serif;
+    margin-top: 40px;
+
+    position: absolute;
+    left: -1%;
 }
   
 .footer-container {
