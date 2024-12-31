@@ -254,6 +254,7 @@ header {
     border-radius: 15vmax;
 
     scale: 0.5;
+    transform: scale(0.5);
     transition: 0.5s ease;
     overflow-x: hidden;
     background-color: #ffc300;
