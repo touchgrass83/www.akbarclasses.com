@@ -30,6 +30,16 @@ function menuClose(){
 
 function searchButtonHandler() {}
 
+document.addEventListener('click', function(event) {
+    var target = event.target;
+    const ids = ["hamburg-menu", "menu-button", "A1", "A2", "A3", "menu"];
+
+    console.log(target.id)
+    if(!ids.includes(target.id)) {
+        menuClose();
+    }
+} );
+
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("introduction").style.transform = "scale(1)";
 }, false);
