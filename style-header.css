@@ -1,10 +1,9 @@
 /* header Section */
 header {
     padding: 17px;
-    background-color: rgb(255, 205, 12, 1);
+    background-color: #ffd60a;
 
     position: sticky;
-    top: 0;
     
     z-index: 2;
     text-align: center;
@@ -40,9 +39,9 @@ header {
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
 }
 
-#A1 { top: 6px; }
+#A1 { top: 4px; }
 
-#A2 { top: 21px; }
+#A2 { top: 20px; }
 
 #A3 { top: 36px; }
 
@@ -285,7 +284,7 @@ header {
     scale: 0.5;
     transition: 0.5s ease;
     overflow-x: hidden;
-    background-color: #D8AE0E;
+    background-color: #ffc300;
 
     z-index: 1;
 }
