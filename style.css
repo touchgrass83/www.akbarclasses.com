@@ -311,8 +311,10 @@ main {
   color: white;
 }
 
-@media (max-width: 768px) {
-  
+@media (max-width: 820px) {
+  .selection-box a div p {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -344,13 +346,11 @@ main {
   }
 
   .selection-box a div i {
-    color: white;
     margin-bottom: 40px;
     scale: 4;
   }
   
   .selection-box a div p {
-    color: white;
     font-size: 8px;
   }
 
@@ -363,6 +363,16 @@ main {
   }
 }
 
+@media (max-width: 344px) {
+  .selection-box a div h2 {
+    font-size: 14px;
+  }
+
+  .selection-box a div p {
+    font-size: 7px;
+  }
+}
+
 /* Introduction End */
 
 /* Page-body Section End */
@@ -370,7 +380,4 @@ main {
 /* Main Section End */
 
 /* Footer Section Start */
-
-
-
 /* Footer Section End */
