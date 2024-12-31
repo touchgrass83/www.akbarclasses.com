@@ -371,25 +371,6 @@ main {
 
 /* Footer Section Start */
 
-@media only screen and (max-width: 1480px) {
-  footer {
-    position: absolute;
-    top: 110%;
-  }
-}
 
-@media only screen and (max-width: 1024px) {
-  footer {
-    position: absolute;
-    top: 130%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  footer {
-    position: absolute;
-    top: 175%;
-  }
-}
 
 /* Footer Section End */
