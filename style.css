@@ -242,7 +242,17 @@ main {
 
 #introduction p {
   font-size: 25px;
-  text-shadow: 0 0 10px #00000033;
+  text-shadow: 0 0 10px #0000001e;
+
+  user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+
+.selection-box {
+  display: grid;
+  row-gap: 20px;
+  grid-template-columns: 33.33% 33.33% 33.33%;
 }
 
 .selection-box a {
@@ -250,33 +260,45 @@ main {
 }
 
 .selection-box a div {
-  width: 30%;
+  width: 95%;
   height: 400px;
 
   position: relative;
-  left: 1.75%;
+  left: 2%;
   
   border: none;
   padding: 20px;
-  margin: 10px;
+  text-align: center;
   border-radius: 32px;
   display: inline-block;
   transition: 0.5s ease;
   background-color: #00356699;
+  box-shadow: 0 0 15px rgb(0, 0, 0, 0.3);
 }
 
 .selection-box a div h2 {
   color:aliceblue;
   text-align: center;
+  margin-bottom: 100px;
   transition: 0.5s ease;
   text-shadow: 0 0 10px #0000004d;
 }
 
-#b-1, #b-3, #b-5 {
+.selection-box a div i {
+  color: white;
+  margin-bottom: 100px;
+  scale: 5;
+}
+
+.selection-box a div p {
+  color: white;
+}
+
+#contact, #gallery, #fee-structure {
   background-color: #00356699;
 }
 
-#b-2, #b-4, #b-6 {
+#updates, #career, #blogs {
   background-color: #001d3d99;
 }
 
@@ -302,24 +324,41 @@ main {
     font-size: 12px;
   }
 
-  .selection-box a div {
-    width: 47%;
-    
-    left: 0%;
+  .selection-box {
+    grid-template-columns: 49.5% 49.5%;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
 
-    margin: 4px;
+  .selection-box a div {
+    width: 98%;
+
+    left: 0;
+    
     height: 200px;
   }
 
   .selection-box a div h2 {
-    font-size: 16px;
+    font-size: 15px;
+    margin-bottom: 40px;
   }
 
-  #b-1, #b-4, #b-5 {
+  .selection-box a div i {
+    color: white;
+    margin-bottom: 40px;
+    scale: 4;
+  }
+  
+  .selection-box a div p {
+    color: white;
+    font-size: 8px;
+  }
+
+  #contact, #career, #fee-structure {
     background-color: #00356699;
   }
   
-  #b-2, #b-3, #b-6 {
+  #updates, #gallery, #blogs {
     background-color: #001d3d99;
   }
 }
@@ -332,8 +371,23 @@ main {
 
 /* Footer Section Start */
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 1480px) {
   footer {
+    position: absolute;
+    top: 110%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  footer {
+    position: absolute;
+    top: 130%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  footer {
+    position: absolute;
     top: 175%;
   }
 }
