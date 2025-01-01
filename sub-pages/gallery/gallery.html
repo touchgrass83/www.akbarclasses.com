@@ -9,14 +9,17 @@
     <link rel="stylesheet" href="/style-header.css">
     <link rel="stylesheet" href="/style-footer.css">
     <link rel="stylesheet" href="style.css">
+    
+    <script src="/scripts/menuHandler.js"></script>
     <script type="text/javascript" src="script.js"></script>
     
+    <link rel="icon" type="image/png" href="/images/logo.png"/>
     <title>GALLERY</title>
 </head>
 <body>
     <header>
         <label for="menu-button">
-            <input type="checkbox" id="menu-button" onclick="menuHandler()">
+            <input type="checkbox" id="menu-button" onclick="menuToggle()">
             <div class="hamburg-menu" id="hamburg-menu">
                 <span id="A1"></span>
                 <span id="A2"></span>
@@ -41,27 +44,27 @@
             <div class="menu" id="menu">
                 <div class="options">
                     <a href="/index.html">
-                        <div id="button-1">
+                        <div data-button="1">
                             <h2><i class="fas fa-home"></i>  Home</h2>
                         </div>
                     </a>
                     <a href="#services">
-                        <div id="button-2">
+                        <div data-button="2">
                             <h2 id="H-05"><i class="fas fa-wrench"></i>  Services</h2>
                         </div>
                     </a>
                     <a href="#aboutus">
-                        <div id="button-3">
+                        <div data-button="3">
                             <h2 id="H-05"><i class="fas fa-align-left"></i>  About us</h2>
                         </div>
                     </a>
                     <a href="#ncertbooks">
-                        <div id="button-4">
+                        <div data-button="4">
                             <h2 id="H-05"><i class="fas fa-book"></i>  Books</h2>
                         </div>
                     </a>
                     <a href="#achievements">
-                        <div id="button-5">
+                        <div data-button="5">
                             <h2 id="H-05"><i class="fas fa-trophy"></i>  Achievements</h2>
                         </div>
                     </a>

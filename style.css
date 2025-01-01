@@ -287,7 +287,7 @@ main {
 
 #contact, #gallery, #fee-structure { background-color: #00356699; }
 
-#updates, #career, #blogs { background-color: #001d3d99; }
+#updates, #instructors, #blogs { background-color: #001d3d99; }
 
 .selection-box a div:hover { transform: scale(1.05); }
 
@@ -363,7 +363,7 @@ main {
   
   .selection-box a div p { font-size: 8px; }
 
-  #contact, #career, #fee-structure { background-color: #00356699; }
+  #contact, #instructors, #fee-structure { background-color: #00356699; }
 
   #updates, #gallery, #blogs { background-color: #001d3d99; }
 
