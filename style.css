@@ -227,7 +227,7 @@ main {
   transform: scale(0.5);
   box-shadow: 0 0 15px rgb(0, 0, 0, 0.3);
   /* background-color: beige;  */
-  background: linear-gradient(90deg, beige 0%, #ffc300 30%, #00356680 80%, #00356680 90%); 
+  background: linear-gradient(195deg, beige 0%, #ffc300 30%, #00356680 80%, #00356680 90%); 
 
   z-index: -1;
 }
