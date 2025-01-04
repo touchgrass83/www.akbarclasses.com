@@ -74,57 +74,35 @@
         <section class="section-body">
             <div class="page-body">
                 <form method="POST" id="form">
+                    <h2 id="form-title">Feedback Form</h2>
 
                     <input type="hidden" name="access_key" value="c729f97e-7c01-471c-80df-f456a237b20b">
-                
-                    <input type="text" name="name" placeholder="Arvind" required>
-                    <input type="email" name="email" placeholder="example@gmail.com" required>
-                
-                    <button type="submit">Submit Form</button>
-
-                    <div id="result" style="color: white;"></div>
+                    
+                    <div id="name-field">
+                        <label for="name-input">
+                            <input class="form-input" id="name-input" type="text" name="name" placeholder="" required>
+                            <h3 class="input-title" id="name-title">Name</h3>
+                        </label> 
+                    </div>
+                    <div id="email-field">
+                        <label for="email-input">
+                            <input class="form-input" id="email-input" type="email" name="email" placeholder="" required>
+                            <h3 class="input-title"  id="email-title" >Email</h3>
+                        </label>
+                    </div>
+                    <div id="message-field">
+                        <label for="message-input">
+                            <textarea class="form-input" id="message-input" name="message" placeholder="" required></textarea>
+                            <h3 class="input-title" id="message-title">Message</h3>
+                        </label>
+                    </div>
+                    
+                    <div id="submit-field">
+                        <label for="submit-button">
+                            <button id="submit-button" type="submit" onclick="handleForm()">Submit Feedback</button>
+                        </label>
+                    </div>
                 </form>
-                
-                <script>
-                    const form = document.getElementById('form');
-                    const result = document.getElementById('result');
-                
-                    form.addEventListener('submit', function(e) {
-                        e.preventDefault();
-                        const formData = new FormData(form);
-                        const object = Object.fromEntries(formData);
-                        const json = JSON.stringify(object);
-                        result.innerHTML = "Please wait..."
-                
-                        fetch('https://api.web3forms.com/submit', {
-                            method: 'POST',
-                            headers: {
-                                'Content-Type': 'application/json',
-                                'Accept': 'application/json'
-                            },
-                            body: json
-                        })
-                        .then(async (response) => {
-                            let json = await response.json();
-                            if (response.status == 200) {
-                                result.innerHTML = "Form submitted successfully";
-                            } else {
-                                console.log(response);
-                                result.innerHTML = json.message;
-                            }
-                        })
-                        .catch(error => {
-                            console.log(error);
-                            result.innerHTML = "Something went wrong!";
-                        })
-                        .then(function() {
-                            form.reset();
-                            setTimeout(() => {
-                                result.style.display = "none";
-                            }, 3000);
-                        });
-                    });
-                </script>
             </div>
         </section>
     </main>

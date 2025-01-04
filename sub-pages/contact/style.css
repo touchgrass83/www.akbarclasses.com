@@ -13,7 +13,7 @@ html { overflow-x:hidden; }
 
 /* Body Section */
 body {
-    min-height: 100vmax;
+    min-height: 100vh;
     background-color: #f4f4f4;
 }
 
@@ -22,7 +22,7 @@ body::-webkit-scrollbar { display: none; }
 a { -webkit-tap-highlight-color: transparent; }
 
 main {
-    height: 100vmax;
+    height: 100vh;
     flex: 1;
     padding: 20px;
 
@@ -32,36 +32,122 @@ main {
 
 .page-body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 90%;
     width: 98vw;
 
-    background-color: black;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
-    position: relative;
-    top: 100px;
+    /* background-color: black; */
 }
 
 form {
-    width: 100%;
-    height: 30%;
-    max-width: 500px;
+    width: 50%;
     padding: 20px;
     border-radius: 10px;
     background-color: #fff;
+    border: 2px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
     display: flex;
     flex-direction: column;
 }
 
-input {
+#form-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    
+    text-align: center;
+}
+
+.form-input {
     width: 100%;
     height: 40px;
-    margin: 10px 0;
+    margin: 20px 0;
     padding: 0 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    outline: none;
+}
+
+.input-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+
+    width: 0;
+    height: 0;
+
+    position: relative;
+    top: -52.5px;
+    left: 10px;
+
+    transition: all 0.5s ease;
+
+    user-select: none;
+    -webkit-user-select: none;
+
+    cursor: text;
+}
+
+#message-title {
+    top: -200px;
+    left: 10px;
+}
+
+#name-input:focus ~ h3, #email-input:focus ~ h3, #name-input:not(:placeholder-shown) ~ h3, #email-input:not(:placeholder-shown) ~ h3 {
+    top: -87.5px;
+    left: 0px;
+
+    /* color: #727D73;
+    font-size: 20px;
+    font-weight: 600; */
+}
+
+#message-input:focus ~ h3, #message-input:not(:placeholder-shown) ~ h3 {
+    top: -235px;
+    left: 0px;
+
+    /* color: #727D73;
+    font-size: 20px;
+    font-weight: 600; */
+}
+
+textarea {
+    max-width: 100%;
+    min-height: 180px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+
+    resize: none;
+}
+
+#submit-button {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media(max-width: 480px) {
+    form {
+        width: 95%;
+    }
 }
