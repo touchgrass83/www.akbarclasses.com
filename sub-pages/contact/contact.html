@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
     
     <script src="/scripts/menuHandler.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
     
     <link rel="icon" type="image/png" href="/images/logo.png"/>
     <title>CONTACT US</title>
@@ -74,16 +74,55 @@
         <section class="section-body">
             <div class="page-body">
                 <form method="POST" id="form">
-                    <!-- Replace with your Access Key -->
+
                     <input type="hidden" name="access_key" value="c729f97e-7c01-471c-80df-f456a237b20b">
-
-                    <input type="text" name="name" required>
-                    <input type="email" name="email" required>
-
+                
+                    <input type="text" name="name" placeholder="Arvind" required>
+                    <input type="email" name="email" placeholder="example@gmail.com" required>
+                
                     <button type="submit">Submit Form</button>
                 </form>
-
-                <div id="result"></div>
+                
+                <script>
+                    const form = document.getElementById('form');
+                    const result = document.getElementById('result');
+                
+                    form.addEventListener('submit', function(e) {
+                        e.preventDefault();
+                        const formData = new FormData(form);
+                        const object = Object.fromEntries(formData);
+                        const json = JSON.stringify(object);
+                        result.innerHTML = "Please wait..."
+                
+                        fetch('https://api.web3forms.com/submit', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                                'Accept': 'application/json'
+                            },
+                            body: json
+                        })
+                        .then(async (response) => {
+                            let json = await response.json();
+                            if (response.status == 200) {
+                                result.innerHTML = "Form submitted successfully";
+                            } else {
+                                console.log(response);
+                                result.innerHTML = json.message;
+                            }
+                        })
+                        .catch(error => {
+                            console.log(error);
+                            result.innerHTML = "Something went wrong!";
+                        })
+                        .then(function() {
+                            form.reset();
+                            setTimeout(() => {
+                                result.style.display = "none";
+                            }, 3000);
+                        });
+                    });
+                </script>
             </div>
         </section>
     </main>
