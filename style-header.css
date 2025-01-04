@@ -7,7 +7,7 @@ header {
     
     z-index: 2;
     text-align: center;
-    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Hamburg Menu Section */
@@ -36,7 +36,7 @@ header {
 
     transition: 0.5s ease;
     background-color:#f4f4f4;
-    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 #A1 { top: 4px; }
@@ -124,7 +124,7 @@ header {
   
       transition: 0.5s ease;
       background-color:#f4f4f4;
-      box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
 
     #A1 { top: 4px; }
@@ -173,7 +173,7 @@ header {
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
 }
 
-#serach-button {
+#search-button {
     height: 100%;
     width: 42px;
     border: none;
@@ -216,7 +216,7 @@ header {
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
   }
 
-  #serach-button {
+  #search-button {
     height: 100%;
     width: 28px;
     border: none;
