@@ -28,8 +28,5 @@ function handleForm() {
     })
     .then(function() {
         form.reset();
-        setTimeout(() => {
-            result.style.display = "none";
-        }, 3000);
     });
 }
