@@ -89,11 +89,11 @@ form {
     left: 10px;
 
     transition: all 0.5s ease;
-
-    user-select: none;
-    -webkit-user-select: none;
+    color: gray;
 
     cursor: text;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 #message-title {
@@ -104,6 +104,8 @@ form {
 #name-input:focus ~ h3, #email-input:focus ~ h3, #name-input:not(:placeholder-shown) ~ h3, #email-input:not(:placeholder-shown) ~ h3,#name-field:hover  h3, #email-field:hover h3 {
     top: -87.5px;
     left: 0px;
+    color: black;
+    content: normal;
 
     /* color: #727D73;
     font-size: 20px;
@@ -113,6 +115,7 @@ form {
 #message-input:focus ~ h3, #message-input:not(:placeholder-shown) ~ h3, #message-field:hover h3 {
     top: -235px;
     left: 0px;
+    color: black;
 
     /* color: #727D73;
     font-size: 20px;
