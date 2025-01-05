@@ -16,7 +16,7 @@ function handleForm() {
     .then(async (response) => {
         let json = await response.json();
         if (response.status == 200) {
-            window.location = "success.html";
+            window.location = "/sub-pages/contact/success.html";
         } else {
             console.log(response);
             // result.innerHTML = json.message;
@@ -24,7 +24,7 @@ function handleForm() {
     })
     .catch(error => {
         console.log(error);
-        window.location = "failure.html";
+        window.location = "/sub-pages/contact/failure.html";
     })
     .then(function() {
         form.reset();
