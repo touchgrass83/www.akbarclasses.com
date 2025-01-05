@@ -101,7 +101,7 @@ form {
     left: 10px;
 }
 
-#name-input:focus ~ h3, #email-input:focus ~ h3, #name-input:not(:placeholder-shown) ~ h3, #email-input:not(:placeholder-shown) ~ h3 {
+#name-input:focus ~ h3, #email-input:focus ~ h3, #name-input:not(:placeholder-shown) ~ h3, #email-input:not(:placeholder-shown) ~ h3,#name-field:hover  h3, #email-field:hover h3 {
     top: -87.5px;
     left: 0px;
 
@@ -110,7 +110,7 @@ form {
     font-weight: 600; */
 }
 
-#message-input:focus ~ h3, #message-input:not(:placeholder-shown) ~ h3 {
+#message-input:focus ~ h3, #message-input:not(:placeholder-shown) ~ h3, #message-field:hover h3 {
     top: -235px;
     left: 0px;
 

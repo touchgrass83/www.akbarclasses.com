@@ -3,9 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        a { text-decoration: none; }
+
+        #page-body {
+            width: 50%;
+            padding: 10px;
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+             
+            border: none;
+            border-radius: 8px;
+            background-color: beige;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        }
+
+        #success {
+            margin: 16px;
+            padding: 16px;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        #check {
+            width: 128px;
+            height: 128px;
+
+            margin: auto auto 48px;
+            padding: 16px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        i {
+            font-size: 5em;
+            color: #f4f4f4;
+        }
+
+        h1 {
+            font-size: 2em;
+            font-weight: 500;
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            font-size: 0.9em;
+            margin: 0;
+            padding: 0;
+        }
+
+        #back-button {
+            /* width: 256px; */
+            height: 45px;
+            margin: 24px auto 2px;
+            padding: 16px;
+            text-align: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border: none;
+            border-radius: 8px;
+            background-color: #007bff;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #back-button:hover {
+            background-color: #0056b3;
+        }
+
+        @media(max-width: 480px) {
+            #page-body {
+                width: 80%;
+            }
+
+            h1 {
+                font-size: 1.1em;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 0.75em;
+            }
+
+            #back-button {
+                height: 32px;
+                padding: 16px;
+                font-size: 1.2em;
+            }
+        }
+
+    </style>
+
     <title>Success</title>
 </head>
 <body>
-    
+    <div id="page-body">
+        <div id="success">
+            <div id="check">
+                <i class="fas fa-check"></i>
+            </div>
+            <h1>We’ve Got Your Message!</h1>
+        </div>
+        <p>Thank you for reaching out to us! We truly value your input and appreciate you taking the time to share your thoughts. Your message has been sent successfully and will be reviewed by one of our associates shortly. If further action is required, we will get back to you as soon as possible. In the meantime, feel free to explore our website for more information or reach out if you have any urgent inquiries. We look forward to assisting you!</p>
+        <a href="/">
+            <div id="back-button">Go Back to Home</div>
+        </a>
+    </div>
 </body>
 </html>
