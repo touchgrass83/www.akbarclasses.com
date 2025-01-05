@@ -127,12 +127,12 @@
                             if (response.status == 200) {
                                 window.location = "success.html";
                             } else {
-                                console.log(response);
+                                // console.log(response);
                                 // result.innerHTML = json.message;
                             }
                         })
                         .catch(error => {
-                            console.log(error);
+                            // console.log(error);
                             window.location = "failure.html";
                         })
                         .then(function() {
