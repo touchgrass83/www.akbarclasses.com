@@ -14,7 +14,11 @@ html { overflow-x:hidden; }
 /* Body Section */
 body {
     min-height: 100vmax;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 body::-webkit-scrollbar { display: none; }
@@ -22,33 +26,43 @@ body::-webkit-scrollbar { display: none; }
 a { -webkit-tap-highlight-color: transparent; }
 
 main {
-    height: 100vmax;
-    flex: 1;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
+.page-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #ffffff;
+
+.structure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 96px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
     border-radius: 8px;
+    border: 2px solid black;
+
+    overflow: hidden;
 }
-h1 {
-    text-align: center;
-    color: #333;
-}
-table {
+
+#title-class-6, #title-class-7, #title-class-8, #title-class-9, #title-class-10 {
+    background-color: #2e5077da;
+    color: #ffffff;
+    padding: 10px;
     width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+table {
+    width: 94vw;
     border-collapse: collapse;
-    margin-top: 20px;
 }
 th, td {
     border: 1px solid #ddd;
@@ -56,9 +70,22 @@ th, td {
     text-align: center;
 }
 th {
-    background-color: #007BFF;
+    background-color: #577BC1;
     color: #ffffff;
 }
-tr:nth-child(even) {
-    background-color: #f2f2f2;
+th:nth-child(even) {
+    background-color: #344cb7cf;
+}
+
+@media(max-width : 480px) {
+    .structure {
+        width: 94vw;
+        margin-top: 32px;
+    }
+
+    #title-class-6, #title-class-7, #title-class-8, #title-class-9, #title-class-10 { font-size: 0.8rem; }
+
+    th { font-size: 0.7rem; }
+
+    td { font-size: 0.6rem; }
 }

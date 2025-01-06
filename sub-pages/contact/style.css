@@ -15,6 +15,10 @@ html { overflow-x:hidden; }
 body {
     min-height: 100vh;
     background-color: #f4f4f4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 body::-webkit-scrollbar { display: none; }
@@ -22,10 +26,6 @@ body::-webkit-scrollbar { display: none; }
 a { -webkit-tap-highlight-color: transparent; }
 
 main {
-    height: 100vh;
-    flex: 1;
-    padding: 20px;
-
     display: flex;
     justify-content: center;
 }
@@ -35,7 +35,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90%;
+    min-height: 100vh;
     width: 98vw;
 
     margin-top: 50px;
