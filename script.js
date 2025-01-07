@@ -1,6 +1,36 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', async function() {
     document.getElementById("introduction").style.transform = "scale(1)";
+
+    introductionAnimation();
 }, false);
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function introductionAnimation(reset = false) {
+    // let para = "Welcome to Akbar Classes, your trusted partner in academic excellence! Established in 2015, Akbar Classes has been a beacon of quality education in Kishanganj, Bihar, located on Insaan School Road, 855107. We specialize in nurturing students from classes 6th to 12th, offering a unique blend of NCERT curriculum and Pearson IIT/NEET Foundation materials to provide an exceptional learning experience. Our passionate and highly skilled teachers are dedicated to inspiring students, fostering curiosity, and guiding them to achieve their full potential. In addition to regular academics, we prepare our students for prestigious Olympiads such as NSO, IMO, NSTSE, UIMO, iOS, and iOM, as well as competitive exams like IOQM, NSEJS, NSEP, and more. We also equip students with the knowledge and strategies required to excel in JEE and NEET, paving the way for their success in these rigorous entrance exams. Expanding our reach, our YouTube channel delves into advanced topics, offering valuable insights and engaging content for learners across the globe. Soon, we will also be launching online courses here on our website, making quality education accessible to students everywhere. Join Akbar Classes and become part of a legacy of success, growth, and academic brilliance!";
+    // let result = "";
+
+    // if (reset) {
+    //     document.getElementById("introduction-paragraph-1").style.transform = "scale(0)";
+    //     await sleep(500);
+    //     document.getElementById("introduction-paragraph-1").innerHTML = "";
+    //     document.getElementById("introduction-paragraph-1").style.transform = "scale(1)";
+    //     await sleep(500);
+    // }
+    
+    // for (let i = 0; i < para.length; i++) {
+    //     result += para[i];
+    //     document.getElementById("introduction-paragraph-1").innerHTML = result + "_";
+    //     await sleep(8);
+    //     if (i == para.length - 1) {
+    //         document.getElementById("introduction-paragraph-1").innerHTML = result;
+    //         await sleep(2500);
+    //         introductionAnimation(true);
+    //     }
+    // }
+}
 
 function animate_1() {
     document.getElementById("box-1").style.transform = "translateX(9vmax) translateY(4vmax)";

@@ -70,6 +70,7 @@ footer {
     width: 30px;
     height: 30px;
     transition: transform 0.3s;
+    filter: invert(100%) sepia(50%);
   }
   
   .footer-social .social-icons a:hover svg {

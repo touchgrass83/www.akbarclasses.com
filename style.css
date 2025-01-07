@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: "Baloo Bhaijaan 2", serif;
     box-sizing: border-box;
 }
 
@@ -15,7 +16,7 @@ html { overflow-x:hidden; }
 body {
     position:sticky;
 
-    min-height: 100vmax;
+    min-height: 100vh;
     background-color: #f4f4f4;
 }
 
@@ -91,7 +92,7 @@ main {
   transform: scale(0);
   transition: 0.5s ease;
   outline: 3px solid black;
-  background-color: #ffc300;
+  background-color: #003566;
 
   border: none;
 
@@ -117,6 +118,7 @@ main {
 
 #title {
   font-size: 52.5px;
+  color: aliceblue;
   text-shadow: 0 0 15px rgb(0, 0, 0, 0.3);
 
   user-select: none;
@@ -126,11 +128,15 @@ main {
 
 #sub-title {
   font-size: 18px;
+  color: aliceblue;
   text-shadow: 0 0 15px rgb(0, 0, 0, 0.3);
 
   user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
+
+  position: relative;
+  top: -5px;
 }
 
 @media (max-width: 768px) {
@@ -218,6 +224,7 @@ main {
 
 #introduction {
   width: 100%;
+  /* height: 640px; */
   
   border: none;
   padding: 20px;
@@ -226,20 +233,46 @@ main {
   transition: 1s ease;
   transform: scale(0.5);
   box-shadow: 0 0 15px rgb(0, 0, 0, 0.3);
+  background-color: #e6effa;
   /* background-color: beige;  */
-  background: linear-gradient(195deg, beige 0%, #ffc300 30%, #00356680 80%, #00356680 90%); 
+  /* background: linear-gradient(195deg, beige 0%, #ffc300 30%, #00356680 80%, #00356680 90%);  */
+  /* background: linear-gradient(195deg, #1F509A 30%, #659287 80%, #659287 90%); */
 
   z-index: -1;
 }
 
 #introduction p {
   font-size: 25px;
+  /* color: #f4f4f4; */
+  line-height: 1.4;
   text-shadow: 0 0 10px #0000001e;
 
   user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
+
+  transition: all 0.5s ease;
+  /* position: absolute; */
 }
+
+#introduction:hover {
+  background-color: #e6faec;;
+
+  & p {
+    text-shadow: 0 0 10px #0000004d;
+  }
+}
+
+/* #introduction-paragraph-2 { opacity: 0; }
+
+#introduction:hover  {
+  & #introduction-paragraph-2 {
+    opacity: 1;
+  }
+  & #introduction-paragraph-1 {
+    opacity: 0;
+  }
+} */
 
 .selection-box {
   display: grid;
@@ -262,7 +295,7 @@ main {
   border-radius: 32px;
   display: inline-block;
   transition: 0.5s ease;
-  background-color: #00356699;
+  background-color: #001d3d99;
   box-shadow: 0 0 15px rgb(0, 0, 0, 0.3);
 }
 
@@ -285,9 +318,9 @@ main {
 
 .selection-box a div p { color: white; }
 
-#contact, #gallery, #fee-structure { background-color: #00356699; }
+#contact, #gallery, #fee-structure { background-color: #B1C29E; }
 
-#updates, #instructors, #blogs { background-color: #001d3d99; }
+#updates, #instructors, #blogs { background-color: #659287; }
 
 .selection-box a div:hover { transform: scale(1.05); }
 
@@ -298,13 +331,15 @@ main {
 
 #contact:hover i { animation: contact-us-animation 2s infinite ease-in-out; }
 
-#updates:hover i { animation: updates-animation 2s infinite ease-in-out; }
+#updates:hover i { animation: blink-animation 2s infinite ease-in-out; }
 
 #gallery:hover i { animation: gallery-animation 2s infinite ease-in-out; }
 
 #fee-structure:hover i { animation: fee-structure-animation 2s infinite ease-in-out; }
 
-#blogs:hover i { animation: blogs-animation 2s infinite ease-in-out; }
+#instructors:hover i { animation: blink-animation 2s infinite ease-in-out; }
+
+#blogs:hover i { animation: blink-animation 2s infinite ease-in-out; }
 
 @keyframes contact-us-animation {
   50% { transform: rotate(-15deg); }
@@ -312,10 +347,10 @@ main {
   100% { transform: rotate(0deg); }
 }
 
-@keyframes updates-animation {
-  50% { opacity: 75%; }
+@keyframes blink-animation {
+  50% { color: rgb(172, 172, 172); }
 
-  100% { opacity: 100%; }
+  100% { color: white; }
 }
 
 @keyframes gallery-animation { 50% { scale: 6; } }
@@ -363,7 +398,7 @@ main {
   
   .selection-box a div p { font-size: 8px; }
 
-  #contact, #instructors, #fee-structure { background-color: #00356699; }
+  #contact, #instructors, #fee-structure { background-color: #B1C29E; }
 
   #updates, #gallery, #blogs { background-color: #001d3d99; }
 
