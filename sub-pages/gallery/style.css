@@ -32,6 +32,21 @@ main {
     justify-content: center;
 }
 
+#img-viewer {
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: -1;
+}
+
 .page-body {
     display: flex;
     flex-direction: column;
@@ -266,7 +281,10 @@ main {
 }
 
 #gallery div:hover {
-    & img { scale: 1.025; }
+    & img { 
+        scale: 1.025;
+        filter: grayscale(50%);
+    }
 
     & i {
         opacity: 0.7;

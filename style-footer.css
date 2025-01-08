@@ -66,16 +66,16 @@ footer {
     gap: 10px;
   }
   
-  .footer-social .social-icons a svg {
-    width: 30px;
-    height: 30px;
+  .footer-social .social-icons a i {
+    scale: 1.7;
+    margin-right: 12px;
+    color: white;
     transition: transform 0.3s;
-    filter: invert(100%) sepia(50%);
   }
   
-  .footer-social .social-icons a:hover svg {
+  .footer-social .social-icons a:hover i {
     transform: scale(1.1);
-    filter: invert(75%) sepia(50%);
+    color: gray;
   }
   
   .footer-bottom {
