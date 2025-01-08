@@ -8,3 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
 function enhanceSize(object) {
     object.style.fontSize = "4rem";
 }
+
+function handleEnlarge(index) {
+    document.getElementById('img-' + index).style.position = "absolute";
+    document.getElementById('img-' + index).style.left = "50%";
+    document.getElementById('img-' + index).style.top = "50%";
+}

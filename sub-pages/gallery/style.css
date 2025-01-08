@@ -7,9 +7,7 @@
     box-sizing: border-box;
 }
 
-html {
-    overflow-x: hidden;
-}
+html { overflow-x: hidden; }
 
 body {
     min-height: 100vmax;
@@ -252,11 +250,31 @@ main {
     border-radius: 10px;
     box-shadow: 0 0 10px #0000004d;
     transition: all 0.5s ease;
+
+    display: flex;
 }
 
-#gallery img:hover {
-  scale: 1.025;
+#gallery i {
+    scale: 4;
+    opacity: 0;
+    color: white;
+    transition: all 0.5s ease;
+
+    position: relative;
+    top: -60px;
+    left: 40px;
 }
+
+#gallery div:hover {
+    & img { scale: 1.025; }
+
+    & i {
+        opacity: 0.7;
+        scale: 5;
+    }
+}
+
+#gallery div i:hover { opacity: 1; }
 
 #img-1 {
     width: 94vw;
@@ -295,6 +313,18 @@ main {
 
 #img-10, #img-11, #img-12 {
     width: 30vw;
+}
+
+@media (max-width: 820px) {
+    #image-box {
+        scale: 0.5;
+    }
+}
+
+@media (max-width: 1024px) {
+    #image-box {
+        scale: 0.8;
+    }
 }
 
 @media (max-width: 480px) {
@@ -347,7 +377,7 @@ main {
     }
 
     #image {
-        transform: translateX(160vw) rotate(-45deg);
+        transform: translateY(-100vh) rotate(-45deg);
         transition: all 1s ease;
     }
 
@@ -356,4 +386,18 @@ main {
         margin-top: 0;
         margin-bottom: 0; 
     }
+
+    #gallery i {
+        scale: 2;
+    
+        top: -35px;
+        left: 20px;
+    }
+    
+    #gallery div:hover i {
+        opacity: 0.7;
+        scale: 3;
+    }
+
+    #gallery div i:hover { opacity: 1; }
 }

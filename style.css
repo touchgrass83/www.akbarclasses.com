@@ -139,8 +139,43 @@ main {
   top: -5px;
 }
 
-@media (max-width: 768px) {
+#miscellaneous {
+  width: 52vw;
+  height: 228px;
 
+  position: absolute;
+  top: -36px;
+  left: 46vw;
+}
+
+#miscellaneous div {
+  width: 128px;
+  height: 48px;
+
+  position: absolute;
+
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+#deco-1 {
+  left: 300px;
+  top: 120px;
+
+  background-color: #B1C29E; 
+}
+
+#deco-2 { 
+  left: 480px;
+  top: 140px;
+
+  background-color: #5D8736; 
+}
+#deco-3 { 
+  left: 60px;
+  top: 156px;
+
+  background-color: #001d3d99; 
 }
 
 @media (max-width: 480px) {
@@ -204,6 +239,10 @@ main {
   #title { font-size: 25px; }
   
   #sub-title { font-size: 10px; }
+
+  #miscellaneous {
+    display: none;
+  }
 }
 
 /* Logo Section End */
